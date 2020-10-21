@@ -1,0 +1,74 @@
+{
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true,
+      "browser": true,
+      "serviceworker": true
+    },
+    "plugins": ["react", "jsx-a11y"],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017
+    },
+    "rules": {
+      "one-var": 0,
+      "react/prop-types": 0,
+      "one-var-declaration-per-line": 0,
+      "new-cap": 0,
+      "consistent-return": 0,
+      "arrow-parens": ["error", "as-needed"],
+      "no-param-reassign": 0,
+      "comma-dangle": 0,
+      "curly": ["error", "multi-line"],
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "no-shadow": [
+        "error",
+        {
+          "allow": ["req", "res", "err"]
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "globals": {
+        "localStorage": true,
+        "document": true,
+        "require": true,
+        "window": true
+      },
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "all",
+          "tabWidth": 2,
+          "semi": true,
+          "singleQuote": true,
+          "endOfLine": "lf"
+        }
+      ],
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "jsx-a11y/alt-text": [ 2, {
+        "elements": [ "img", "object", "area", "input[type=\"image\"]" ],
+        "img": ["Image"],
+        "object": ["Object"],
+        "area": ["Area"],
+        "input[type=\"image\"]": ["InputImage"]
+      }]
+    }
+  }
