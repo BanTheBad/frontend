@@ -1,0 +1,12 @@
+build/
+.prettierignore
+.prettierrc
+/dist/**
+/node_modules/**
+/public/**
+/build/**
+/coverage/**
+/docs/**
+/jsdoc/**
+.circleci
+.github
