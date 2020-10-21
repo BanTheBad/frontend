@@ -1,0 +1,39 @@
+/* BanTheBad */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 56px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label.input {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon.input-password {
+  float: right;
+  position: relative;
+  margin-left: -7px;
+  margin-top: -48px;
+  margin-right: 20px;
+  z-index: 2;
+  color: #171717;
+}
+
+.button {
+  height: 48px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #B5A396;
+  background-color: #303030;
+  color: #F9DECA;
+  cursor: pointer;
+  box-sizing: border-box;
+}
