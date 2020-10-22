@@ -2,14 +2,14 @@ import React from 'react';
 
 /**
  *
- * @param {{text: string, onClick: Object}} props
+ * @param {{text: string, size: string, onClick: Object}} props
  */
 function Button(props) {
-  const { text, onClick } = props;
+  const { text, onClick, size } = props;
 
   return (
     <div>
-      <button className="button" onClick={onClick}>
+      <button className={`button ${size ? size : ''}`} onClick={onClick}>
         {text}
       </button>
     </div>

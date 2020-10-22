@@ -25,19 +25,34 @@ function MyComponent(){
 #### InputText
 For text inputs
 > props
-* label - name of input label
-* value - value of input held in state
-* onChange - function that handles input onChange events
+* label - `String` - name of input label
+* value - `String` - value of input held in state
+* onChange - `Function` - function that handles input onChange events
 ***
 #### InputPassword
 For password inputs
 > props
-* label - name of input label
-* value - value of input held in state
-* onChange - function that handles input onChange events
+* label - `String` - name of input label
+* value - `String` - value of input held in state
+* onChange - `Function` - function that handles input onChange events
 ***
 #### Button
 For button actions
 > props
-* text - button text
-* onClick - function that handles button onClick events
+* text - `String` - button text
+* size - `String` - button size (*small* or *big*). Default *big*
+* onClick - `Function` - function that handles button onClick events
+***
+#### VictimCard
+To display victim data 
+> props
+* name - `String` - victim's name
+* location - `Object` - victim's location object with keys *state* and *city*
+* status - `String` - victim status e.g Murdered
+* imageURL - `String` - URL to victim's photo
+* victimStoryURL - `String` - URL to victim's story
+***
+#### TopNav
+Top navigation bar with links
+> props
+* No props required
