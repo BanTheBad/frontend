@@ -1,19 +1,32 @@
 /* BanTheBad */
-input[type=text], input[type=password] {
+
+* {
+  margin: 0;
+}
+
+input[type=text], input[type=password], input[type=email] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 16px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
   height: 56px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171717;
   font-weight: bold;
+  background-color: #FCFCFC;
 }
 
 .label.input {
-  font-size: 20px;
+
+  font-style: normal;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
 }
 
 .icon.input-password {

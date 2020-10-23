@@ -21,6 +21,7 @@ function InputPassword(props) {
         name="input-password"
         value={value}
         onChange={onChange}
+        {...props}
       />
       <span
         className="icon input-password"
