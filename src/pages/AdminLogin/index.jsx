@@ -40,7 +40,7 @@ const AdminLogin = () => {
     if (type === 'password') {
       if (!passwordRegEx.test(password)) {
         setPasswordError(
-          'Password should be 8 characters long consisting of upper and lower case letters',
+          'Password should be atleast 8 characters long consisting of upper and lower case letters',
         );
       } else {
         setPasswordError(null);
@@ -56,7 +56,7 @@ const AdminLogin = () => {
 
     if (!passwordRegEx.test(password)) {
       return setPasswordError(
-        'Password should be 8 characters long consisting of upper and lower case letters',
+        'Password should be atleast 8 characters long consisting of upper and lower case letters',
       );
     }
 
@@ -100,8 +100,8 @@ const AdminLogin = () => {
               />
               {passwordError && (
                 <small className="error-container">
-                  Password should be 8 characters long consisting of upper and
-                  lower case letters
+                  Password should be atleast 8 characters long consisting of
+                  upper and lower case letters
                 </small>
               )}
             </div>
