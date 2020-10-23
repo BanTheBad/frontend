@@ -4,19 +4,19 @@ import React from 'react';
  *
  * @param {{label: string, value: string, onChange: Object}} props
  */
-function InputText(props) {
+function InputEmail(props) {
   const { label, value, onChange, className } = props;
 
   return (
     <div>
       <div>
-        <label htmlFor="input-text" className="label input">
+        <label htmlFor="input-email" className="label input">
           {label}
         </label>
       </div>
       <input
-        type="text"
-        name="input-text"
+        type="email"
+        name="input-email"
         className={className}
         value={value}
         onChange={onChange}
@@ -26,4 +26,4 @@ function InputText(props) {
   );
 }
 
-export default InputText;
+export default InputEmail;
