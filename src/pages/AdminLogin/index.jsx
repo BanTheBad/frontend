@@ -11,7 +11,7 @@ import Logo from '../../assets/images/logo.png';
 const emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 // eslint-disable-next-line no-useless-escape
-const passwordRegEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}/;
+const passwordRegEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
 
 const AdminLogin = () => {
   const [email, setEmail] = useState('');
@@ -40,7 +40,7 @@ const AdminLogin = () => {
     if (type === 'password') {
       if (!passwordRegEx.test(password)) {
         setPasswordError(
-          'Password should be 4 characters long consisting of upper and lower case letters',
+          'Password should be 8 characters long consisting of upper and lower case letters',
         );
       } else {
         setPasswordError(null);
@@ -56,7 +56,7 @@ const AdminLogin = () => {
 
     if (!passwordRegEx.test(password)) {
       return setPasswordError(
-        'Password should be 4 characters long consisting of upper and lower case letters',
+        'Password should be 8 characters long consisting of upper and lower case letters',
       );
     }
 
@@ -100,7 +100,7 @@ const AdminLogin = () => {
               />
               {passwordError && (
                 <small className="error-container">
-                  Password should be 4 characters long consisting of upper and
+                  Password should be 8 characters long consisting of upper and
                   lower case letters
                 </small>
               )}
