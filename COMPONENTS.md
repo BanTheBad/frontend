@@ -41,6 +41,7 @@ For button actions
 > props
 * text - `String` - button text
 * size - `String` - button size (*small* or *big*). Default *big*
+* width - `String` - button width. Button fills width of parent by default
 * onClick - `Function` - function that handles button onClick events
 ***
 #### VictimCard
@@ -55,4 +56,14 @@ To display victim data
 #### TopNav
 Top navigation bar with links
 > props
-* No props required
+* withLinks - Boolean - choose to display topnav with or without nav links
+***
+#### AccusedCard
+Display details of accused officer/official
+> props
+* name - `String` - full name of accused officer
+* rank - `String` - rank of accused officer
+* postingState - `String` - state where accused officer s posted/serving
+* offence - `String` - offence for which accused has been charged
+* imageURL - `String` - link to accused photo
+* caseURL - `String` - link to case involving accused

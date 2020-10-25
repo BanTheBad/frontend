@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #171717;
+}
+
 input[type=text], input[type=password], input[type=email] {
   width: 100%;
   padding: 12px 16px;
@@ -202,4 +206,92 @@ a.not-cases-link {
 hr.nav-divider {
   border: 1px dashed #9F8F83;
   margin: 14px 16px;
+}
+
+.details-header {
+  height: 56px;
+  display: flex;
+}
+.details-header .section {
+  width: 50%;
+  font-size: 16px;
+  padding-top: 28px;
+  text-align: center;
+  color: #9F8F83;
+  cursor: pointer;
+}
+.details-header .section.active {
+  color: #F9DECA;
+  border-bottom: 2px solid;
+}
+
+.bg-dark {
+  background-color: #303030;
+}
+.bg-darker {
+  background-color: #171717;
+}
+.lighter {
+  color: #F9DECA;
+}
+.light {
+  color: #9F8F83;
+}
+.white {
+  color: #F2F2F2
+}
+
+.accused-card-container {
+  width: 60%;
+  margin-top: 40px;
+}
+.accused-card {
+  overflow: auto;
+  margin-top: 20px;
+}
+.accused-image-container {
+  float: left;
+  width: 47%;
+}
+.accused-details-container {
+  float: right;
+  width: 47%;
+  /* padding: 2px 16px; */
+}
+.accused-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+.accused-rank {
+  font-size: 12px;
+  color: #BCB7B7;
+}
+.accused-offence-header {
+  font-size: 12px;
+  color: #F7F7F7;
+  margin-top: 20px;
+}
+.accused-offence {
+  font-size: 16px;
+  font-weight: bold;
+  color: #EB5757;
+}
+.accused-case-link {
+  margin-top: 20px;
+}
+.accused-case-link a {
+  
+  color: #F7F7F7;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .accused-image-container, .accused-details-container {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .accused-card-container { width: 100%;}
 }

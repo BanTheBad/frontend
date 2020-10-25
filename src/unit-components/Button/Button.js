@@ -2,10 +2,10 @@ import React from 'react';
 
 /**
  *
- * @param {{text: string, size: string, onClick: Object}} props
+ * @param {{text: string, size: string, width: string, onClick: Object}} props
  */
 function Button(props) {
-  const { type, text, onClick, size, disabled } = props;
+  const { type, text, onClick, size, disabled, width } = props;
 
   return (
     <div>
@@ -21,6 +21,7 @@ function Button(props) {
           border: disabled ? '2px solid #C4C4C4' : '2px solid #B5A396',
 
           cursor: disabled ? 'not-allowed' : 'pointer',
+          width: width ? width : '',
         }}
       >
         {text}
