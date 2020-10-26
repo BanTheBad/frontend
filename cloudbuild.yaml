@@ -1,0 +1,18 @@
+steps:
+  # Copy app.yaml file
+  - name: gcr.io/cloud-builders/gsutil
+    args: ['cp', 'gs://$_BUCKET/app.yaml', './app.yaml']
+
+  # Install node packages
+  - name: 'gcr.io/cloud-builders/npm'
+    args: [ 'install' ]
+
+  # Build productive files
+  - name: 'gcr.io/cloud-builders/npm'
+    args: [ 'run', 'build' ]
+    #timeout: "1600s"
+
+  # Deploy to App Engine
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy"]
+    #timeout: "1600s"
