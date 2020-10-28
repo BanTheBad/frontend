@@ -52,6 +52,7 @@ To display victim data
 * status - `String` - victim status e.g Murdered
 * imageURL - `String` - URL to victim's photo
 * victimStoryURL - `String` - URL to victim's story
+* useCase - String - where card is used ('cases' or 'victims'). _View story_ link is visible by default but absent in 'cases'
 ***
 #### TopNav
 Top navigation bar with links
