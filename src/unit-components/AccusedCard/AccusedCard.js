@@ -6,8 +6,8 @@ import React from 'react';
  */
 function AccusedCard(props) {
   const {
-    imageURL = 'https://via.placeholder.com/400',
-    caseURL = '/case/12345',
+    imageURL = 'https://via.placeholder.com/400?text=Accused+Photo',
+    caseURL = '/cases/12345',
     name = 'Mohammed Adamu',
     rank = 'Inspector General of Police',
     postingState = 'FCT',

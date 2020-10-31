@@ -2,10 +2,11 @@ import React from 'react';
 
 /**
  *
- * @param {{name: string, location: Object, status: string, imageURL: string, victimStoryURL: string}} props
+ * @param {{name: string, location: Object, status: string, imageURL: string, victimStoryURL: string, useCase: string}} props
  */
 function VictimCard(props) {
   const {
+    useCase,
     name = 'John Doe',
     location = { state: 'Lagos', city: 'Ikeja' },
     status = 'Murdered',
@@ -23,7 +24,10 @@ function VictimCard(props) {
         </span>
         <span className="victim-status">{status}</span>
       </div>
-      <div className="victim-story-link-container">
+      <div
+        className="victim-story-link-container"
+        style={{ display: useCase === 'cases' ? 'none' : 'block' }}
+      >
         <a href={victimStoryURL} className="victim-story-link">
           View story
         </a>
