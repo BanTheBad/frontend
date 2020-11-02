@@ -11,6 +11,11 @@ To get started on this project, please use the following
 3. Install all the dependency of the project using `yarn` or `yarn install`.
 4. Read the project structure and start hacking. Check [COMPONENT.md](COMPONENTS.md) for some components to use.
 
+## UI Requirement Design
+
+Checkout the Prototype [here](https://www.figma.com/proto/rimlPD299s8gJTQi0jmeD7/BanTheBadWiki?node-id=51%3A0&scaling=scale-down "Figma Prototype")
+You can take a look at the UI Artboards [here](https://www.figma.com/file/rimlPD299s8gJTQi0jmeD7/BanTheBadWiki?node-id=51%3A0 "Figma UI artboards") when you are ready to Start
+
 ## Available Scripts
 
 In the project directory, you can run:

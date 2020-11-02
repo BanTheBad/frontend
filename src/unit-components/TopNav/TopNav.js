@@ -7,7 +7,6 @@ import { Button } from '../../unit-components';
  */
 function TopNav(props) {
   const { withLinks } = props;
-
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const toggleNavCollapse = e => {
     e.preventDefault();
